@@ -5,9 +5,10 @@
    Tutorial 8
    Coding Challenge 3
 
-   Filename: code8-3_anim.css
+   Filename: anim.css
 */
 
+/* Cube container */
 div#cube {
    position: absolute;
    top: 300px;
@@ -22,13 +23,14 @@ div#cube {
    animation: spinCube 6s linear infinite;
 }
 
+/* Cube faces */
 div#cube img {
    display: block;
    width: 300px;
    height: 300px;
    position: absolute;
-   top: 0px;
-   left: 0px;
+   top: 0;
+   left: 0;
 }
 
 /* Face positioning */
@@ -39,7 +41,7 @@ div#cube img {
 #faceTop    { transform: rotateX(90deg)  translateZ(150px); }
 #faceBottom { transform: rotateX(-90deg) translateZ(150px); }
 
-/* Cube rotation */
+/* Cube rotation animation */
 @keyframes spinCube {
    from { transform: rotateX(24deg) rotateY(0deg); }
    to   { transform: rotateX(24deg) rotateY(360deg); }
